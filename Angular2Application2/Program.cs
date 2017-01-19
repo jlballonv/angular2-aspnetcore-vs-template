@@ -21,6 +21,7 @@ namespace Angular2Application2
                 .UseConfiguration(config)
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls("http://*:4040")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
